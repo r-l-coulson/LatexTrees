@@ -1,0 +1,222 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\usepackage{cancel}
+\usetikzlibrary{positioning}
+
+\begin{document}
+
+
+\begin{figure}
+\hspace{-4cm}
+\begin{tikzpicture}[grow'=up,scale=.6]
+\tikzstyle{level 1}=[sibling distance=3.3in]
+\tikzstyle{level 2}=[sibling distance=2in]
+\tikzstyle{level 3}=[sibling distance=1in]
+\tikzstyle{level 4}=[sibling distance=0.5in]
+\tikzstyle{level 5}=[sibling distance=0.2in]
+\tikzstyle{level 6}=[sibling distance=0.1in]
+\tikzstyle{level 7}=[sibling distance=0.07in]
+\node [label=$c_0$] {} coordinate (t9)
+child{ coordinate (t0) edge from parent[color=black,thick]
+child{ coordinate (t00) edge from parent[color=red,thick]
+child{coordinate (t000) edge from parent[color=black,thick]
+child{coordinate (t0000) edge from parent[color=purple,thick]
+child{coordinate (t00000) edge from parent[color=magenta,thick]
+child{coordinate (t000000) edge from parent[color=black,thick]}
+}%endparen t00000
+}%endparen t0000
+}%endparen t000
+child{coordinate (t001) edge from parent[color=purple,thick]
+child{coordinate (t0010) edge from parent[color=purple,thick]
+child{coordinate (t00100) edge from parent[color=magenta,thick]
+child{coordinate (t001000) edge from parent[color=black,thick]}
+}%endparen t00100
+child{coordinate (t00101) edge from parent[color=magenta,thick]
+child{coordinate (t001010) edge from parent[color=black,thick]}
+}%endparen t00101
+}%endparen t0010
+}%endparen t001
+child{coordinate (t002) edge from parent[color=olive,thick]
+child{coordinate (t0020) edge from parent[color=purple,thick]
+child{coordinate (t00200) 
+edge from parent[color=magenta,thick]
+child{coordinate (t002000)
+edge from parent[color=black,thick]}
+}%endparen t00200
+}%endparen t0020
+}%endparen t002
+child{coordinate (t003) edge from parent[color=teal,thick]
+child{coordinate (t0030) edge from parent[color=purple,thick]
+child{coordinate (t00300) edge from parent[color=magenta,thick]
+child{coordinate (t003000) edge from parent[color=black,thick]}
+child{coordinate (t003001) edge from parent[color=black,thick]}
+child{coordinate (t003002) edge from parent[color=black,thick]}
+child{coordinate (t003003) edge from parent[color=black,thick]}
+child{coordinate (t003004) edge from parent[color=black,thick]}
+}%endparen t00300
+}%endparen t0030
+}%endparen t003
+}%endparen t00
+}%endparen t0
+child{ coordinate (t1) edge from parent[color=black,thick]
+child{ coordinate (t10) edge from parent[color=cyan,thick]
+child{coordinate (t100) edge from parent[color=black,thick]
+child{coordinate (t1000) edge from parent[color=purple,thick]
+child{coordinate (t10000) edge from parent[color=magenta,thick]
+child{coordinate (t100000) edge from parent[color=black,thick]}
+}%endparen t10000
+}%endparen t1000
+}%endparen t100
+}%endparen t10
+}%endparen t1
+child{ coordinate (t2) edge from parent[color=black,thick]
+child{ coordinate (t20) edge from parent[color=purple,thick]
+child{coordinate (t200) edge from parent[color=red,thick]
+child{coordinate (t2000) edge from parent[color=purple,thick]
+child{coordinate (t20000) edge from parent[color=magenta,thick]
+child{coordinate (t200000) edge from parent[color=black,thick]}
+}%endparen t20000
+}%endparen t2000
+}%endparen t200
+}%endparen t20
+child{coordinate (t21) edge from parent[color=teal,thick]
+child{coordinate (t210) edge from parent[color=olive,thick]
+child{coordinate (t2100) edge from parent[color=magenta,thick]
+child{coordinate (t21000) edge from parent[color=magenta,thick]
+child{coordinate (t210000) edge from parent[color=black,thick]}
+}%endparen t21000
+}%endparen t2100
+child{coordinate (t2101) edge from parent[color=purple,thick]
+child{coordinate (t21010) edge from parent[color=magenta,thick]
+child{coordinate (t210100) edge from parent[color=black,thick]}
+}%endparen t21010
+}%endparen t2101
+}%endparen t210
+}%endparen t21
+}%endparen t2
+child{ coordinate (t3) edge from parent[color=black,thick]
+child{ coordinate (t30) edge from parent[color=orange,thick]
+child{coordinate (t300) edge from parent[color=red,thick]
+child{coordinate (t3000) edge from parent[color=blue,thick]
+child{coordinate (t30000) edge from parent[color=magenta,thick]
+child{coordinate (t300000) edge from parent[color=black,thick]}
+}%endparen t30000
+}%endparen t3000
+}%endparen t300
+}%endparen t30
+}%endparen t3
+;
+%line spaces make a difference!!!
+
+%relations on edges and node labels
+\node[circle, fill=blue,inner sep=0pt, minimum size=5pt] at (t9) {};
+\node[label=280:$\scriptstyle{\{x<v_0,x \cancel{E} v_0\}}$] at (t0) {};
+\node[circle, fill=blue,inner sep=0pt, minimum size=5pt,label=0:$c_1$] at (t2) {};
+\node[label=250:$\scriptstyle{\{v_0<x,x \cancel{E} v_0\}}$] at (t3) {};
+\node[circle, fill=blue,inner sep=0pt, minimum size=5pt,label=0:$c_2$] at (t00) {};
+\node[circle, fill=blue,inner sep=0pt, minimum size=5pt,label=0:$c_3$] at (t210) {};
+\node[circle, fill=blue,inner sep=0pt, minimum size=5pt,label=0:$c_4$] at (t0010) {};
+\node[circle, fill=blue,inner sep=0pt, minimum size=5pt,label=0:$c_5$] at (t00300) {};
+\node[label=0:$\scriptstyle{\{x<v_0, x E v_0\}}$] at (t1) {};
+\node[label=180:$\scriptstyle{\{v_0<x, x E v_0\}}$] at (t2) {};
+\node[label=200:${\color{red}\scriptstyle{\{x<v_1, x \cancel{E} v_1\}}}$] at (t00) {};
+\node[label=200:${\color{cyan}\scriptstyle{\{x<v_1, x E v_1\}}}$] at (t10) {};
+\node[label=250:${\color{purple}\scriptstyle{\{x<v_1, x E v_1\}}}$] at (t20) {};
+\node[label=280:${\color{teal}\scriptstyle{\{v_1<x, x E v_1\}}}$] at (t21) {};
+\node[label=280:${\color{orange}\scriptstyle{\{v_1<x, x \cancel{E} v_1\}}}$] at (t30) {};
+\node[label=270:$\scriptstyle{\{x<v_2, x \cancel{E} v_2\}}$] at (t000) {};
+%\node[label=260:$\scriptstyle{\{x<v_2}$,\newline $\scriptstyle{x E v_2}\}}$] at (t001) {};
+\node[label=270:${\color{teal}\scriptstyle{\{v_2<x, x \cancel{E} v_2\}}}$] at (t003) {};
+%\node at (t001) [align=left]{$\scriptstyle{x<v_2}$\\$\scriptstyle{x E v_2}$};
+\node[label=250:$\scriptstyle{\{v_2<x, x \cancel{E} v_2\}}$] at (t100) {};
+\node[label=250:${\color{red}\scriptstyle{\{v_2<x, x \cancel{E} v_2\}}}$] at (t200) {};
+\node[label=280:${\color{olive}\scriptstyle{\{v_2<x, x \cancel{E} v_2\}}}$] at (t210) {};
+\node[label=280:${\color{red}\scriptstyle{\{v_2<x, x \cancel{E} v_2\}}}$] at (t300) {};
+%\node[align=left,label=250:${\color{purple}{\scriptscriptstyle{\{x<v_2}$,\\ $\scriptscriptstyle{x E v_2\}}}}$] at (t0010) {};
+\node[label=280:${\color{blue}\scriptstyle{\{v_3<x, x \cancel{E} v_3\}}}$] at (t3000) {};
+\node[label=280:${\color{purple}\scriptstyle{\{v_3<x, x E v_3\}}}$] at (t2101) {};
+\node[label=250:${\color{red}\scriptstyle{\{x<v_3, x E v_3\}}}$] at (t2100) {};
+\node[label=280:${\color{magenta}\scriptstyle{\{v_4<x, x \cancel{E} v_4\}}}$] at (t00300) {};
+
+%dots above
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t000000) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t001000) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t001010) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t002000) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t003000) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t003001) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t003002) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t003003) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t003004) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t100000) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t200000) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t210000) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t210100) {};
+\node[circle,inner sep=0pt, minimum size=5pt,label=90:$\vdots$] at (t300000) {};
+
+
+
+%\node[circle,fill=white,draw,outer sep=0pt,inner sep=1.5pt minimum size=5pt, label=$v_4$,below=4cm of t001] (v4) {};
+\node[circle, fill=blue,inner sep=0pt, minimum size=5pt, label=$v_4$,below=4cm of t001] (v4) {};
+\node[circle, fill=blue,inner sep=0pt, minimum size=5pt, label=$v_2$,below=3.1cm of t00] (v2) {};
+\node[circle, fill=blue,inner sep=0pt, minimum size=5pt, label=$v_5$,below=4cm of t003] (v5) {};
+\node[circle, fill=blue,inner sep=0pt, minimum size=5pt, label=$v_0$,below=1.2cm of t9] (v0) {};
+\node[circle, fill=blue,inner sep=0pt, minimum size=5pt, label=$v_1$,below=2.1cm of t2] (v1) {};
+\node[circle, fill=blue,inner sep=0pt, minimum size=5pt, label=$v_3$,below=3cm of t21] (v3) {};
+
+%open circles
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t0) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t0000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t00000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t000000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t001) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t00100) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t001000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t00101) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t001010) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t002) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t0020) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t00200) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t002000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t003) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t0030) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t003000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t003001) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t003002) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t003003) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t003004) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t1) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t10) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t100) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t1000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t10000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t100000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t20) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t200) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t2000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t20000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t200000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t21) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t2100) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t21000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t210000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t2101) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t21010) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t210100) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t3) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t30) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t300) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t3000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t30000) {};
+\node[circle, fill=white,draw,inner sep=0pt, minimum size=4pt] at (t300000) {};
+
+\draw[magenta,thick] (v4)--(v2);
+\draw[magenta,thick] (v0)--(v1);
+\draw[magenta,thick] (v1)--(v3);
+\end{tikzpicture}
+\end{figure}
+
+
+\end{document}
